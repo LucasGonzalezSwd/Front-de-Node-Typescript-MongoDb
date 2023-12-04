@@ -34,11 +34,11 @@ export const Home = () => {
   return (
      <div className='flex flex-col h-full back' id='nav'>
   
-    <div className="flex w-screen h-full justify-center mt-[3rem] gap-[2.5rem] flex-wrap items-center  mb-[2rem] ">
+    <div className="flex w-screen h-full justify-center mt-[3rem] gap-[1rem] flex-wrap items-center  mb-[2rem] ">
       
       
       {players.map((card) => (
-        <div key={card._id} className='mr-[0.2rem]'>
+        <div key={card._id} className='m-[1rem]'>
          <CardMagic  playerId={card._id} namePlayer={card.namePlayer} gameName={card.gameName}range={card.range} honor={card.honor}/> 
          </div>
       ))}
