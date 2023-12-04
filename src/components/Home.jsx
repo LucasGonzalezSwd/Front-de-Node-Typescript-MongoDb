@@ -33,16 +33,17 @@ export const Home = () => {
 
   return (
      <div className='flex flex-col h-full back' id='nav'>
-    <div className="flex w-screen h-full justify-center mt-[3rem] gap-[2rem] flex-wrap items-center  mb-[2rem] ">
+  
+    <div className="flex w-screen h-full justify-center mt-[3rem] gap-[2.5rem] flex-wrap items-center  mb-[2rem] ">
       
       
       {players.map((card) => (
-        
-         <CardMagic key={card._id} playerId={card._id} namePlayer={card.namePlayer} gameName={card.gameName}range={card.range} honor={card.honor}/> 
-        
+        <div key={card._id} className='mr-[0.2rem]'>
+         <CardMagic  playerId={card._id} namePlayer={card.namePlayer} gameName={card.gameName}range={card.range} honor={card.honor}/> 
+         </div>
       ))}
-    </div>
     
+    </div>
     <div className='flex w-screen justify-center' id='card'>
       <FormPlayer/>
     </div>
