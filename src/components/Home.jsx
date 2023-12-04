@@ -38,7 +38,7 @@ export const Home = () => {
       
       
       {players.map((card) => (
-        <div key={card._id} className='m-[1rem]'>
+        <div key={card._id} className='ml-[1rem] mr-[1rem] mb-[0.5rem]'>
          <CardMagic  playerId={card._id} namePlayer={card.namePlayer} gameName={card.gameName}range={card.range} honor={card.honor}/> 
          </div>
       ))}
