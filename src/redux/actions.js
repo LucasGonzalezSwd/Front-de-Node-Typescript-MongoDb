@@ -4,7 +4,9 @@ import { GET_ALL_PLAYERS, POST_NEW_PLAYER, PUT_PLAYER } from "./actionsTypes";
 // Acción para obtener los jugadores
 export const fetchPlayers = () => async (dispatch) => {
   try {
-    const res = await axios("http://localhost:3001/api/players");
+    const res = await axios(
+      "https://node-typescript-mongo-db.vercel.app/api/players"
+    );
     dispatch({
       type: GET_ALL_PLAYERS,
       payload: res.data,
@@ -17,7 +19,7 @@ export const fetchPlayers = () => async (dispatch) => {
 export const postPlayers = (playerData) => async (dispatch) => {
   try {
     const res = await axios.post(
-      "http://localhost:3001/api/players",
+      "https://node-typescript-mongo-db.vercel.app/api/players",
       playerData
     );
     dispatch({
@@ -32,7 +34,7 @@ export const postPlayers = (playerData) => async (dispatch) => {
 export const putPlayers = (playerId, updatedPlayerData) => async (dispatch) => {
   try {
     const res = await axios.put(
-      `http://localhost:3001/api/players/${playerId}`,
+      `https://node-typescript-mongo-db.vercel.app/api/players/${playerId}`,
       updatedPlayerData
     );
     dispatch({
