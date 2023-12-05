@@ -65,7 +65,7 @@ export const Home = () => {
 };
 
 // import  { useState, useEffect } from 'react';
-
+// import charactersData from './characters.json'
 // const Home = () => {
 //   const [characters, setCharacters] = useState([]);
 //   const [sortedAscending, setSortedAscending] = useState(true);

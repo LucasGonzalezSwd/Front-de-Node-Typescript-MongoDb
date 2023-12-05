@@ -54,14 +54,14 @@ const FormPlayer = () => {
   };
 
   return (
-    <div className='w-3/4 backCard rounded-md p-[1rem]  flex justify-center items-center mt-[1rem] mb-[2rem]' >
+    <div className='w-3/4 max-[463px]:w-5/6  backCard rounded-md p-[1rem]  flex justify-center items-center mt-[1rem] mb-[2rem]' >
     <form onSubmit={handleSubmit} className='w-3/4 p-[1rem]  pt-[2.5rem] justify-center items-center flex-col flex gap-[1rem]'>
-      <div className='w-full flex justify-center '>
-        <label htmlFor='gameName' className='w-[8rem] text-white flex justify-evenly '>
+      <div className='w-full max-[463px]:flex-col flex justify-center '>
+        <label htmlFor='gameName' className='w-[8rem] max-[463px]:w-full text-white flex justify-evenly '>
           Game Name: 
           </label>
           <input
-          className='w-2/4 flex rounded-sm'
+          className='w-2/4 max-[463px]:w-full flex rounded-sm max-[463px]:mt-[0.2rem]'
             type="text"
             name="gameName"
             value={playerData.gameName}
@@ -69,12 +69,12 @@ const FormPlayer = () => {
             required
           />
       </div>
-      <div className='w-full flex justify-center '>
-        <label htmlFor='namePlayer' className='text-white w-[8rem] flex justify-evenly '>
+      <div className='w-full max-[463px]:flex-col flex justify-center'>
+        <label htmlFor='namePlayer' className='w-[8rem] max-[463px]:w-full text-white flex justify-evenly  '>
           Player Name:
           </label>
           <input
-          className='w-2/4 flex rounded-sm'
+          className='w-2/4 max-[463px]:w-full flex rounded-sm max-[463px]:mt-[0.2rem]'
             type="text"
             name="namePlayer"
             value={playerData.namePlayer}
@@ -82,12 +82,12 @@ const FormPlayer = () => {
             required
           />
       </div>
-      <div className='w-full flex justify-center'>
-        <label htmlFor='range' className='text-white w-[8rem] flex justify-evenly '>
+      <div className='w-full max-[463px]:flex-col flex justify-center'>
+        <label htmlFor='range' className='w-[8rem] max-[463px]:w-full text-white flex justify-evenly  '>
           Range:
           </label>
           <select
-          className='w-2/4 flex rounded-sm'
+          className='w-2/4 max-[463px]:w-full flex rounded-sm max-[463px]:mt-[0.2rem]'
             type="text"
             name="range"
             value={playerData.range}
@@ -107,12 +107,12 @@ const FormPlayer = () => {
           </select>
       </div>
       <div className='w-full flex-col flex justify-center'>
-        <div className='flex w-full justify-center'>
-        <label htmlFor='honor' className='text-white w-[8rem] flex justify-evenly '>
+        <div className='w-full max-[463px]:flex-col flex justify-center'>
+        <label htmlFor='honor' className='w-[8rem] max-[463px]:w-full text-white flex justify-evenly  '>
           Honor:
           </label>
           <input
-          className='w-2/4 flex rounded-sm'
+          className='w-2/4 max-[463px]:w-full flex rounded-sm max-[463px]:mt-[0.2rem]'
             type="text"
             name="honor"
             value={playerData.honor}
